@@ -57,8 +57,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
     const arr = [];
-    let sumABC = a+b+c;
-    let multABC = a*b*c;
+    let sumABC = sum(sum(a,b)[0], c)[0];
+    let multABC = multiply(multiply(a,b)[0], c)[0];
     arr.push(sumABC);
     arr.push(multABC);
     arr.push(`${a} and ${b} and ${c} sum to ${sumABC}.`);
